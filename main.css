@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.47;
+    color: #878786;
+    background: white;
+    width: 1440px;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
+.button {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+    line-height: 1.21;
+    padding: 12px 7px 12px 7px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+.button-cancel {
+    border: 1px solid #757575;
+    background-color: white;
+    color: #757575;
+}
+.button-action {
+    color: white;
+    background-color: #8bc34a;
+    border: 1px solid #8bc34a;
+}
+.button-action_disabled {
+    background-color: #878786;
+    border-color: #878786;
+    color: white;
+}
+.button:hover {
+    cursor: pointer;
+}
+svg:hover {
+    cursor: pointer;
+}
+.input-text {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 0.875rem;
+    background-color: white;
+    color: #878786;
+    line-height: 1.29;
+    padding: 11px 10px 11px 10px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+.input-quan {
+    display: inline-block;
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+.input-checkbox {
+    display: none;
+}
+.input-checkbox + label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 26px;
+}
+.input-checkbox + label:before {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c6c6c5;
+    border-radius: 3px;
+    left: 0;
+    top: 0px;
+}
+.input-checkbox:checked + label .icon_check {
+    visibility: visible;
+}
+.icon_check {
+    visibility: hidden;
+    position: absolute;
+    left: 5px;
+    top: 5.8px;
+    width: 10px;
+    height: 8px;
+}
+.input-radio {
+    display: none;
+}
+.input-radio + .label-radio {
+    position: relative;
+    padding-left: 25px;
+}
+.input-radio + .label-radio::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 1px solid #c6c6c5;
+    border-radius: 50%;
+    left: 0.3px;
+    top: 0.3px;
+}
+.input-radio:checked + .label-radio::before {
+    border-color: #8bc34a;
+}
+.input-radio:checked + .label-radio::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 11px;
+    background-color: #8bc34a;
+    border: 1px solid #8bc34a;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+}
+.main {
+    width: 1440px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header__block_top {
+    display: flex;
+    height: 100px;
+}
+.header__logo {
+    width: 166px;
+    height: 54px;
+    margin: 25px 130px 21px 80px;
+}
+.input-block {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    margin: 33px 148px 27px 0px;
+}
+.input-block__input-text {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.input-block__button-action {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.personal-block {
+    width: 520px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.personal-block__button-cancel {
+    margin-top: 33px;
+    margin-right: 23px;
+}
+.personal-bock__button-quan {
+    margin-top: 33px;
+    position: relative;
+    margin-right: 28px;
+    width: 120px;
+}
+.quan {
+    position: absolute;
+    top: -7px;
+    left: 85px;
+    font-size: 0.75rem;
+    color: white;
+    border: 1px solid #8bc34a;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #8bc34a;
+    padding: 3px 5px 4px 5px;
+}
+.personal-block__liked {
+    margin-top: 42px;
+    height: 26px;
+    width: 45px;
+    margin-right: 27px;
+}
+.personal-block__cart {
+    margin-top: 40px;
+    height: 27px;
+    width: 55px;
+    margin-right: 22px;
+}
+.personal-block__profile {
+    width: 40px;
+    height: 40px;
+    margin-top: 36px;
+    margin-right: 8px;
+}
+.personal-block__arrow-down {
+    margin-top: 54px;
+    height: 5px;
+}
+.header__block_bottom {
+    height: 45px;
+    background-color: #f4f4f4;
+}
+.nav__list {
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.nav-list__item {
+    display: inline;
+    margin-right: 50px;
+}
+.nav-item__link {
+    text-decoration: none;
+    color: #737270;
+}
+.footer {
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top {
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 236px;
+    padding-right: 218px;
+    padding-top: 50px;
+}
+.column-item__icon {
+    height: 18px;
+    width: 18px;
+    background-color: #8bc34a;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-left: 3px;
+    position: relative;
+    top: 5px;
+}
+.column__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1c1c1b;
+}
+.column-item__link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #1c1c1b;
+    line-height: 30px;
+}
+.footer-bottom {
+    height: 67px;
+}
+.footer-bottom__line {
+    width: 1279px;
+    height: 1px;
+    background: #c6c6c5;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+.footer-bottom__contacts {
+    padding-left: 536px;
+    padding-right: 536px;
+}
+.contacts__link {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #878786;
+    font-style: normal;
+}
+.contacts__text:not(:last-child) {
+    margin-right: 20px;
+}
+.location {
+    /* padding-left: 85px; */
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+.location__icon {
+    width: 5px;
+    height: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+.location-item__link {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #878786;
+}
